@@ -1,18 +1,20 @@
 function HomePage() {
   return (
-    <main>
-      <nav>
-        <h3></h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+    <main className="">
+      <nav className="flex justify-around text-white absolute inset-x-0 z-100 py-3 bg-[#636363e6]">
+        <h3 className="text-base font-bold cursor-pointer text-lg">
+          CrowdFund
+        </h3>
+        <ul className="flex gap-x-10">
+          <li className="cursor-pointer hover:text-[#3cb4ac]">About</li>
+          <li className="cursor-pointer hover:text-[#3cb4ac]">Discover</li>
+          <li className="cursor-pointer hover:text-[#3cb4ac]">Get Started</li>
         </ul>
       </nav>
-      <picture>
+      <picture className="relative">
         <source
-          media="(max-width: 1000px)"
-          srcSet="images/image-hero-desktop.jpg"
+          media="(max-width:1000px)"
+          srcSet="images/image-hero-mobile.jpg"
         />
         <source
           media="(max-width:500px )"
@@ -25,6 +27,9 @@ function HomePage() {
           width="1500"
         />
       </picture>
+      <div>
+        <h2>MasterCraft Bamboo Monitor Riser</h2>
+      </div>
     </main>
   );
 }
